@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1251" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://dl.dropboxusercontent.com/scl/fi/stt8ung9eg6f9gyid2s2i/.png?rlkey=th5yc2bwnfgh8an285jcglp7w&st=171l17k3&dl=0" type="image/x-icon">
+    <title>Aspera Team</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #467a91;
+            font-family: Calibri;
+        }
+
+        .main {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 630px;
+            background-color: #366a81;
+            border-radius: 15px;
+        }
+
+        .image {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+
+        .info {
+            position: absolute;
+            left: 120px;
+            top: 30px;
+            width: 150px;
+            height: 40px;
+            background-color: #467a91;
+            color: #ffffff;
+            border-radius: 15px;
+        }
+
+        .projects {
+            position: absolute;
+            left: 290px;
+            top: 30px;
+            width: 150px;
+            height: 40px;
+            background-color: #467a91;
+            color: #ffffff;
+            border-radius: 15px;
+        }
+
+        .team {
+            position: absolute;
+            left: 460px;
+            top: 30px;
+            width: 150px;
+            height: 40px;
+            background-color: #467a91;
+            color: #ffffff;
+            border-radius: 15px;
+        }
+
+        .show_text {
+            position: absolute;
+            left: 0px;
+            top: 120px;
+            width: 630px;
+            height: calc(100vh - 120px);
+            background-color: #366a81;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="image" src="https://dl.dropboxusercontent.com/scl/fi/stt8ung9eg6f9gyid2s2i/.png?rlkey=th5yc2bwnfgh8an285jcglp7w&st=171l17k3&dl=0" />
+        <button class="info" onclick="info()">About us</button>
+        <button class="projects" onclick="projects()">Our projects</button>
+        <button class="team" onclick="team()">Team</button>
+    </div>
+
+    <div class="show_text" id="show_text">
+
+    </div>
+
+    <script>
+        function info()
+        {
+            if (document.getElementById("text"))
+            {
+                const element = document.getElementById("text");
+                element.remove();
+            }
+            const header = document.createElement("h3");
+            header.id = "text";
+            header.style.position = "absolute";
+            header.style.top = "20px";
+            header.style.left = "20px";
+            header.style.width = "590px";
+            header.style.color = "#ffffff";
+            header.style.backgroundColor = "#366a81";
+            const headerText = document.createTextNode("We are a team working on various IT projects. We were founded on July 25, 2025. Currently, our team consists of 5 members. We are working on our new project, Aspera, and the new operating system, Hues OS. Our Telegram channel is @aspera_team.");
+            header.appendChild(headerText);
+            document.getElementById("show_text").appendChild(header);
+        }
+
+        function projects()
+        {
+            if (document.getElementById("text"))
+            {
+                const element = document.getElementById("text");
+                element.remove();
+            }
+            const header = document.createElement("h3");
+            header.id = "text";
+            header.style.position = "absolute";
+            header.style.top = "20px";
+            header.style.left = "20px";
+            header.style.width = "590px";
+            header.style.color = "#ffffff";
+            header.style.backgroundColor = "#366a81";
+            const headerText = document.createTextNode("We are working on the Aspera and Hues OS projects. Aspera is a new messenger in the form of a website. We have been working on it for 2 months. The chat and stickers are already ready. Hues OS is our new operating system. Currently, only the bootloader is ready. The kernel is not available yet.");
+            header.appendChild(headerText);
+            document.getElementById("show_text").appendChild(header);
+        }
+
+        function team()
+        {
+            if (document.getElementById("text"))
+            {
+                const element = document.getElementById("text");
+                element.remove();
+            }
+            const header = document.createElement("h3");
+            header.id = "text";
+            header.style.position = "absolute";
+            header.style.top = "20px";
+            header.style.left = "20px";
+            header.style.width = "590px";
+            header.style.color = "#ffffff";
+            header.style.backgroundColor = "#366a81";
+            const headerText = document.createTextNode("Now our team has 5 members: @vapro_279 (head. developer, programmer, founder of Aspera Team), @Po4emutka (tester), @mojjevelnik_Hyh (designer, advertiser), @Mefhanter (tester, founder of ARU Messenger), @cobaka332 (advertiser). We are always happy to new members.");
+            header.appendChild(headerText);
+            document.getElementById("show_text").appendChild(header);
+        }
+    </script>
+</body>
+</html>
